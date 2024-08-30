@@ -263,7 +263,6 @@ function initPlayer(id, handle, options) {
 
 				if (media.youTubeApi) {
 					options.title = media.youTubeApi.getVideoData().title;
-
 					media.videoTracks = {length: 1};
 				} else if (media.hlsPlayer) {
 					media.videoTracks = media.hlsPlayer.videoTracks;
